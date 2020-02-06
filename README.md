@@ -18,7 +18,17 @@ arr.find(function(value, index, array){
 
 // 2
 ```
+2. findIndex()
+- If the callback returns true for any single value, return the index at which that value is found
+- Otherwise, return -1
 
+```javascript
+let arr = [1,2,3];
+
+arr.findIndex(function(value, index, array){
+  return value < 2;
+}); // 0
+```
 
 
 
