@@ -43,5 +43,16 @@ arr.forEach(function(value, index, array){
 // 3
 // undefined
 ```
+4. map()
+- Creates a new array
+- Runs a callback function for each value in the array
+- Adds the result of that callback function to the new array
+- Returns a new array of the same length
+```javascript
+let numbers = [1,2,3];
 
+numbers.map(function(value, index, array){
+  return value * 10;
+});
+```
 
