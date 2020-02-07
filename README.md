@@ -379,3 +379,8 @@ for (let crewMember in spaceship.crew) {
   console.log(`${spaceship.crew[crewMember].name}: ${spaceship.crew[crewMember].degree}`)
 };
 ```
+### Promises
+- Promises are objects that represent the eventual outcome of an asynchronous operation
+
+
+### Async-Await
