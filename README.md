@@ -313,11 +313,11 @@ for(let val of annoyingHashTags) {
 - There are also useful Object class methods such as Object.assign(), Object.entries(), and Object.keys() 
 ```javascript
 const robot = {
-	model: 'SAL-1000',
-  mobile: true,
-  sentient: false,
-  armor: 'Steel-plated',
-  energyLevel: 75
+model: 'SAL-1000',
+mobile: true,
+sentient: false,
+armor: 'Steel-plated',
+energyLevel: 75
 };
 
 const robotKeys = Object.keys(robot);
