@@ -151,3 +151,76 @@ takesFour(...names);
 // Angela
 // Abe
 ```
+- Using spread will only make a “shallow” copy.
+- If there are nested objects, they will still contain the same reference
+- For a deep copy, use libraries like lodash
+
+## Destructuring 
+
+Example #1
+
+```javascript
+ let userData = {
+   username: 'smith',
+   id: 12345,
+   password: 'fiddlesticks',
+   firstName: 'Angela',
+   lastName: 'Smith',
+   age: 'guess',
+   isLegit: undefined
+ };
+
+/*
+  declare variables: username, firstName, lastName, id
+   values taken from the keys of the same name in userData
+ */
+ let { username, firstName, lastName, id } = userData;
+
+ console.log(username);  // smith
+ console.log(id);        // 12345
+```
+
+Example #2 with spread syntax
+
+```javascript
+const userData = {
+  username: 'smith',
+  id: 12345,
+  password: 'fiddlesticks',
+  firstName: 'Angela',
+  lastName: 'Smith',
+  age: 'guess',
+  isLegit: undefined
+};
+
+// extract the password key; collect the rest in 'user'
+const { password, ...user } = userData;
+
+console.log(user);
+/*
+{
+  username: 'smith',
+  id: 12345,
+  firstName: 'Angela',
+  lastName: 'Smith',
+  age: 'guess',
+  isLegit: undefined
+}
+*/
+```
+
+Example #3 Destructuring Nested Objects
+
+```javascript
+const instructor = {
+  id: 44,
+  name: 'Colt',
+  isHilarious: true,
+  funFacts: {
+    favoriteFood: 'Burrito',
+    favoriteDrink: 'Old Fashioned',
+  }
+};
+const {funFacts: {favoriteFood, favoriteDrink}} = instructor;
+console.log(favoriteFood); // 'Burrito'
+```
