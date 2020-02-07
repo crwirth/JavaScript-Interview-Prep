@@ -395,3 +395,36 @@ for (let crewMember in spaceship.crew) {
 
 
 ### Async-Await
+
+### Coding Problems
+(Detecting Infinite Numbers)
+```javascript
+function isInfinite(arr) {
+  let currentIndex = 0
+  let storedIndexes = {}
+  while (true) {
+    console.log(currentIndex)
+    currentIndex += arr[currentIndex]
+    
+    if (storedIndexes[currentIndex]) {
+      console.log('infinite loop detected')
+      break
+    } else {
+      storedIndexes[currentIndex] = true
+    }
+    
+    if (currentIndex < 0) {
+      console.log('negative bounds')
+      break
+    }
+    if (arr.length <= currentIndex) {
+      console.log("exceeds positive boundaries")
+      break
+    }
+  }
+
+}
+
+isInfinite([1, 1, 1, -2]) // => true
+
+```
