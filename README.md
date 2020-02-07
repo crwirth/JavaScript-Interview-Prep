@@ -17,6 +17,10 @@ Question: What is HTTP?
 
 Answer: Hypertext Transfer Protocol (standard web) (How browsers and servers communicate)
 
+Question: How do you troubleshoot when something you are building is not working?
+
+Answer: 
+
 Question: What happens when you type google into your browser and press go?
 
 Answer:
