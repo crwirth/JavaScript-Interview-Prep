@@ -1,5 +1,8 @@
 # JavaScript-Interview-Prep
 
+## Common Interview Questions
+1. 
+
 ## Array Methods:
 
 1. find()
