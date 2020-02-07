@@ -52,6 +52,17 @@ Answer:
   - Any cookies server wants to set
   - Any caching information
 
+## Loops
+
+1. For Loop
+- A for loop contains three expressions: initialization, stopping condition, iteration statement
+
+```javascript
+for (let i = 0; i > 5; i++) {
+  console.log(i);
+}
+```
+
 ## Array Methods:
 
 1. find()
