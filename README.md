@@ -308,3 +308,28 @@ for(let val of annoyingHashTags) {
    console.log("Please don't use", val);
 }
 ```
+### Built-in Object Methods
+- We have access to object instance methods like: .hasOwnProperty(), .valueOf()
+- There are also useful Object class methods such as Object.assign(), Object.entries(), and Object.keys() 
+```javascript
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+
+const robotKeys = Object.keys(robot);
+
+console.log(robotKeys);
+
+// Declare robotEntries below this line:
+const robotEntries = Object.entries(robot)
+console.log(robotEntries);
+
+// Declare newRobot below this line:
+const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot);
+
+console.log(newRobot);
+```
