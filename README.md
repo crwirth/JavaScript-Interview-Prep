@@ -2,7 +2,7 @@
 
 JavaScript Interview Prep Materials
 
-Array Methods:
+## Array Methods:
 
 1. find()
 - Iterates through an array and runs a callback on each value
