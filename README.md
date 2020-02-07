@@ -55,4 +55,17 @@ numbers.map(function(value, index, array){
   return value * 10;
 });
 ```
+5. filter()
+- Creates a new array, loops through an array
+- Runs a callback function on each value in the array
+- If the callback function returns true, that value is pushed to the new array
+- If the callback function returns false, that value will not be included in the new array
+- the result of the callback will always be evaluated into a boolean
+```javascript
+let letters = ["a", "b", "c", "b", "c"];
+
+letters.filter(function(value, index, array){
+  return value === "b";
+});
+```
 
