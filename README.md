@@ -222,3 +222,45 @@ const instructor = {
 const {funFacts: {favoriteFood, favoriteDrink}} = instructor;
 console.log(favoriteFood); // 'Burrito'
 ```
+## Maps
+- Similar to objects, except the keys can be ANY data type!
+- Created using the new keyword
+```javascript
+let m = new Map([
+  [1, "Ayisha"],
+  [2, "Shani"],
+  [3, "Michelle"],
+])
+
+for(let [key,value] of m.entries()){
+    console.log(key, value);
+}
+
+// 1 "Ayisha"
+// 2 "Shani"
+// 3 "Michelle"
+```
+## Sets
+- All values in a set are unique
+- Any type of value can exist in a set
+```javascript
+const hashTags = new Set(["#selfie", "#nofilter"])
+```
+- adding to sets
+```javascript
+const annoyingHashTags = new Set();
+annoyingHashTags.add("#YOLO");
+annoyingHashTags.add("#Blessed")
+annoyingHashTags.add("#YOLO"); // will not be added!
+```
+- Iterating over a set
+```javascript
+const annoyingHashTags = new Set();
+annoyingHashTags.add("#Selfie");
+annoyingHashTags.add("#Blessed");
+annoyingHashTags.add("#NoFilter");
+
+for(let val of annoyingHashTags) {
+   console.log("Please don't use", val);
+}
+```
