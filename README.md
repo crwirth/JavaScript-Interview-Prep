@@ -119,3 +119,35 @@ evens.reduce(function(accumulator, nextValue){
   30
 */
 ```
+
+## Rest & Spread
+- They are both the “same” operator and use three dots …
+- When the three dots are part of a function definition, we call the operator the “rest” operator
+- The rest operator is the last parameter defined in a function and will evaluate to an array of all additional arguments passed in
+
+```javascript
+function displayArguments(...restOfArgs){
+  console.log("The first argument is", restOfArgs[0])
+  return `You passed in ${restOfArgs.length} arguments!`
+}
+
+displayArguments(1,2,3); // "You passed in 3 arguments!"
+```
+
+When calling a function, you can “spread out” array elements:
+
+```javascript
+  console.log(one);
+  console.log(two);
+  console.log(three);
+  console.log(four);
+}
+
+const names = ['Mary', 'Colt', 'Angela', 'Abe'];
+
+takesFour(...names);
+// Mary
+// Colt
+// Angela
+// Abe
+```
