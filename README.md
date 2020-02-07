@@ -6,18 +6,23 @@ Question: What is Big O Notation?
 Answer: Expression of how long an algorithm takes to run depending on how long is the input, usually talking about the worst case scenario.
 
 Question: What is DNS?
+
 Answer: DNS translates domain names to IP addresses so browsers can load Internet resources.
 
 Question: What is reverse DNS lookup?
+
 Answer: Determining the domain name associated with an IP address – the reverse of the usual "forward" DNS lookup of an IP address from a domain name.
 
 Question: What is HTTP?
+
 Answer: Hypertext Transfer Protocol (standard web) (How browsers and servers communicate)
 
 Question: What happens when you type google into your browser and press go?
+
 Answer:
 
 Question: What is in a request?
+
 Answer: 
 - Method (ex: GET)
 - HTTP protocol version (almost always 1.1)
@@ -29,6 +34,7 @@ Answer:
   - Any cookies that server has sent
 
 Question: What is in a response?
+
 Answer:
 - HTTP protocol version (almost always 1.1)
 - Response Status Code (200, 404, etc)
