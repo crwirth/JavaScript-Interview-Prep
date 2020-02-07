@@ -25,6 +25,10 @@ Question: What happens when you type google into your browser and press go?
 
 Answer:
 
+Question: What is REST?
+
+Answer:
+
 Question: What is in a request?
 
 Answer: 
