@@ -1,7 +1,5 @@
 # JavaScript-Interview-Prep
 
-JavaScript Interview Prep Materials
-
 ## Array Methods:
 
 1. find()
