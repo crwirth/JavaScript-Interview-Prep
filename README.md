@@ -2,6 +2,7 @@
 
 ## Common Interview Questions
 Question: What is Big O Notation?
+
 Answer: Expression of how long an algorithm takes to run depending on how long is the input, usually talking about the worst case scenario.
 
 Question: What is DNS?
