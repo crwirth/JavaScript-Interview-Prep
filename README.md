@@ -392,8 +392,16 @@ for (let crewMember in spaceship.crew) {
 ```
 ### Promises
 - Promises are objects that represent the eventual outcome of an asynchronous operation
-
-
+```javascript
+const executorFunction = (resolve, reject) => {
+  if (someCondition) {
+      resolve('I resolved!');
+  } else {
+      reject('I rejected!'); 
+  }
+}
+const myFirstPromise = new Promise(executorFunction);
+```
 ### Async-Await
 
 ### Coding Problems
